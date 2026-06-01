@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Script
         run: |
-          python automate_Vincent_Christian.py
+          python preprocessing/automate_Vincent_Christian.py
