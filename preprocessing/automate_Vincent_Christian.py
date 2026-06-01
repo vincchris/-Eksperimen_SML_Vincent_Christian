@@ -10,7 +10,7 @@ from sklearn.impute import SimpleImputer
 
 warnings.filterwarnings("ignore")
 
-RAW_DATA_PATTERN = "../Global Superstore.csv"
+RAW_DATA_PATTERN = "../Global_Superstore.csv"
 OUTPUT_DIR       = "namadataset_preprocessing"
 TARGET_COL       = "Profit"
 TARGET_BINARY    = "Profitable"
