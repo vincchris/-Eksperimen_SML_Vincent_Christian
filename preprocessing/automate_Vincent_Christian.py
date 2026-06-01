@@ -4,13 +4,18 @@ import argparse
 import warnings
 import numpy as np
 import pandas as pd
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 
 warnings.filterwarnings("ignore")
 
-RAW_DATA_PATTERN = "../Global_Superstore.csv"
+BASE_DIR = Path(__file__).resolve().parent
+
+RAW_DATA_PATTERN = str(
+    BASE_DIR.parent / "Global_Superstore.csv"
+)
 OUTPUT_DIR       = "namadataset_preprocessing"
 TARGET_COL       = "Profit"
 TARGET_BINARY    = "Profitable"
